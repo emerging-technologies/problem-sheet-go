@@ -1,9 +1,11 @@
-PROJECT=problems 
-TEX=pdflatex --shell-escape --interaction=nonstopmode -halt-on-error
+PROJECT=problems
+TEX=pdflatex --shell-escape --halt-on-error --interaction=nonstopmode
+BIBTEX=bibtex
 
 all:
 	$(TEX) $(PROJECT).tex
+	$(BIBTEX) $(PROJECT)
+	$(TEX) $(PROJECT).tex
 
 clean:
-	$(RM) -rf *.log *.aux *.out *.bak *.idx *.toc *.nav *.snm *.vrb _minted-slides
-
+	rm -rf _minted-slides *.{log,aux,out,bak,idx,toc,nav,snm,vrb,synctex.gz,fls,fdb_latexmk,pyg,dvi}
