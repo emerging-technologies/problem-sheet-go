@@ -1,9 +1,8 @@
-### Problem Sheet: Go
-#### Emerging Technologies
+# Problem Sheet: Go
 
-This is a problem sheet for the module Emerging Technologies.
+This is a problem sheet for the module **Emerging Technologies**.
 The module is taught to fourth year undergraduate students at [GMIT](http://www.gmit.ie).
-The lecturer is [Ian McLoughlin](ianmcloughlin.github.io).
+The lecturer is [Ian McLoughlin](https://ianmcloughlin.github.io).
 
 #### Compilation
 The problem sheet is written in [LaTeX](https://www.latex-project.org/), and a [TeX distribution](https://www.tug.org/texlive/) is required to compile it.
