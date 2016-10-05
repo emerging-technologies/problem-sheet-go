@@ -23,6 +23,44 @@ The first six prime numbers in order are 2, 3, 5, 7, 11, and 13.
 So, for instance, the 4\textsuperscript{th} prime number is 7.
 Write a program to find the 10,001\textsuperscript{st} prime number.~\cite{projecteuler}.
 \begin{solution}
+package main
+
+import (
+  "fmt"
+  "math"
+)
+
+func Is_prime(n uint) bool {
+  if n < 2 {
+    return false
+  }
+  
+  for i := uint(2); i <= uint(math.Floor(math.Sqrt(float64(n)))); i++ {
+    if n % i == 0 {
+      return false
+    }
+  }
+  return true
+}
+
+func Prime_no(n uint) uint {
+  last_prime := uint(2)
+  no_primes := uint(1)
+  for i := last_prime + 1; no_primes < n; i++ {
+    if Is_prime(i) {
+      no_primes++
+      last_prime = i
+    }
+  }
+  return last_prime
+}
+
+
+func main() {
+  fmt.Println(Prime_no(7))
+  fmt.Println(Prime_no(100))
+}
+ 
 \end{solution}
 
 
