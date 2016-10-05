@@ -1,4 +1,4 @@
-# Problem Sheet: Go
+# Problem Sheet: Web Applications
 
 This is a problem sheet for the module **Emerging Technologies**.
 The module is taught to fourth year undergraduate students at [GMIT](http://www.gmit.ie).
